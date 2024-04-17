@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.postscenter {
+    text-align: center;
+    font-size: 1.5rem; 
+}
+
+.titulosposts {
+    font-size: 1.3rem;
+}
+
+.tabelas {
+    table-layout: unset;
+}
