@@ -10,6 +10,7 @@ import Home from './Home';
 
 const App: React.FC = () => {
   return (
+    // Função do Router para envolver toda a aplicação.
       <Router>
         
         <div>
@@ -26,13 +27,15 @@ const App: React.FC = () => {
 
        <div>
         <Routes>
-                <Route path='/' element={<Home/>} />
-               <Route path="/posts" element={<Posts/>} />
-            <Route path="/users" element={<Users/>} />
-           <Route path="/photos" element={<Photos/>} />
+                <Route path='/' element={<Home/>} /> {/* Rota para a página inicial */}
+               <Route path="/posts" element={<Posts/>} /> {/* Rota para os posts */}
+            <Route path="/users" element={<Users/>} /> {/* Rota para os usuários */}
+           <Route path="/photos" element={<Photos/>} /> {/* Rota para as fotos */}
         </Routes>
       </div>
 
+
+      {/* Rodapé do site */}
       <footer className="bg-blue-950 text-white py-4 text-center">
     <p>© 2024 Fiap - RM:554064 Gabriel Sá Bragança - 1TDSZ_2023 -  </p>
 </footer>
